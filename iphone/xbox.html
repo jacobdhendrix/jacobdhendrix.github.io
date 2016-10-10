@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta id="viewport" name="viewport" content="width=320; initial-scale=0.9; maximum-scale=0.9; user-scalable=no;">
+
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <style type="text/css">
+        .coverimage {
+            width: auto !important;
+            height: auto !important;
+            max-width: 110px;
+            max-height: 110px;
+        }
+    </style>
+    <script type="text/javascript" src="prototype.js"></script>
+    <script type="text/javascript" src="animator.js"></script>
+    <script type="text/javascript" src="library.js"></script>
+</head>
+<body>
+    <div id="libraryheader" style="width: 100%; height: 88px; background: url(../images/shelfheader.jpg)">
+        <div id="librarybanner">Library</div>
+        
+        <div id="shelfnavigation">
+            <select class="shelf_selection" onchange="location.href = this.options[this.selectedIndex].value;"><option value="index.html">3D</option><option value="amiibo.html">amiibo</option><option value="animated.html">Animated</option><option value="bluray.html">Blu-ray</option><option value="disneyinfinity.html">Disney Infinity</option><option value="dreamcast.html">Dreamcast</option><option value="ds.html">DS</option><option value="dvd.html">DVD</option><option value="fullcollection.html">Full Collection</option><option value="gamecube.html">GameCube</option><option value="godzilla.html">Godzilla</option><option value="holiday.html">Holiday</option><option value="legodimensions.html">Lego Dimensions</option><option value="marvelcinematicuniverse.html">Marvel Cinematic Universe</option><option value="pcgames.html">PC Games</option><option value="playstation.html">Playstation</option><option value="quentintarantino.html">Quentin Tarantino</option><option value="stephenking.html">Stephen King</option><option value="tv.html">TV</option><option value="wii.html">Wii</option><option value="xbox.html" selected="selected">Xbox</option></select>
+        </div>
+    </div>
+    
+    <table id="mediatable" border="0" cellspacing="0" cellpadding="0" style="width: 100%; background-image: url(../images/shelfpattern.png)">
+        <tr id="collection"><td><div class="medium"><div class="title">Bioshock - Limited Edition</div><span class="creator">Take 2</span><span class="rating">5</span><span class="asin">B000VESHEQ</span><span class="description">BioShock is the "genetically enhanced" first person shooter that lets you do things never before possible in the genre: turn everything into a weapon, biologically mod your body with plasmids, hack devices and systems, upgrade your weapons and craft new ammo variants, and experiment with different battle techniques. You are a cast-away in Rapture, an underwater Utopia torn apart by civil war. Caught between powerful forces, and hunted down by genetically modified splicers and deadly security systems, you have to come to grips with a deadly, mysterious world filled with powerful technology and fascinating characters. No encounter ever plays out the same, and no two gamers will play the game the same way.</span><div class="cover coverimage" onclick="showDetails(this, event)"><img class="coverimage" src="../covers/E2A493A7-6919-435B-807E-BB3CC5E19294-140.png" width="99" height="140"></div></div><div class="medium"><div class="title">Fable</div><span class="creator">DirectForSale</span><span class="rating">4</span><span class="asin">B0002IZICK</span><span class="description"></span><div class="cover coverimage" onclick="showDetails(this, event)"><img class="coverimage" src="../covers/1638E7C9-EED3-4E21-BE78-B79236D40FBB-140.png" width="99" height="140"></div></div></td>
+        </tr>
+    </table>
+    
+    <div id="details" onclick="hideDetails()">
+        <div id="detailscover"></div>
+        <div id="detailsheader">
+            <div id="detailstitle"></div>
+            <div id="detailscreator"></div>
+            <hr>
+        </div>
+
+        <div id="detailsbody">
+        </div>
+
+        <div id="detailsfooter">
+            <hr>
+            <a id="searchinsideanchor" href="#"><img id="searchinside" src="../images/searchinside.png" alt="Search Inside"></a>
+        </div>
+    </div> <!-- end details -->
+</body>
+</html>
