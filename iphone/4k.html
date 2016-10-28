@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta id="viewport" name="viewport" content="width=320; initial-scale=0.9; maximum-scale=0.9; user-scalable=no;">
+
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <style type="text/css">
+        .coverimage {
+            width: auto !important;
+            height: auto !important;
+            max-width: 110px;
+            max-height: 110px;
+        }
+    </style>
+    <script type="text/javascript" src="prototype.js"></script>
+    <script type="text/javascript" src="animator.js"></script>
+    <script type="text/javascript" src="library.js"></script>
+</head>
+<body>
+    <div id="libraryheader" style="width: 100%; height: 88px; background: url(../images/shelfheader.jpg)">
+        <div id="librarybanner">Library</div>
+        
+        <div id="shelfnavigation">
+            <select class="shelf_selection" onchange="location.href = this.options[this.selectedIndex].value;"><option value="index.html">3D</option><option value="4k.html" selected="selected">4K</option><option value="amiibo.html">amiibo</option><option value="animated.html">Animated</option><option value="bluray.html">Blu-ray</option><option value="disneyinfinity.html">Disney Infinity</option><option value="dreamcast.html">Dreamcast</option><option value="ds.html">DS</option><option value="dvd.html">DVD</option><option value="fullcollection.html">Full Collection</option><option value="gamecube.html">GameCube</option><option value="godzilla.html">Godzilla</option><option value="holiday.html">Holiday</option><option value="legodimensions.html">Lego Dimensions</option><option value="marvelcinematicuniverse.html">Marvel Cinematic Universe</option><option value="pcgames.html">PC Games</option><option value="playstation.html">Playstation</option><option value="quentintarantino.html">Quentin Tarantino</option><option value="stephenking.html">Stephen King</option><option value="tv.html">TV</option><option value="wii.html">Wii</option><option value="xbox.html">Xbox</option></select>
+        </div>
+    </div>
+    
+    <table id="mediatable" border="0" cellspacing="0" cellpadding="0" style="width: 100%; background-image: url(../images/shelfpattern.png)">
+        <tr id="collection"><td><div class="medium"><div class="title">The Angry Birds Movie</div><span class="creator">Clay Kaytis, Fergal Reilly</span><span class="rating"></span><span class="asin">B01G7JFKJ8</span><span class="description">In this hilarious animated adventure comedy, you'll finally find out why the birds are so angry. In an island paradise populated entirely by happy, flightless birds – or almost entirely, Red, a bird with a temper problem, speedy Chuck, and the volatile Bomb have always been outsiders. But when the island is visited by mysterious green piggies, it’s up to these unlikely outcasts to figure out what the pigs are up to.</span><div class="cover coverimage" onclick="showDetails(this, event)"><img class="coverimage" src="../covers/C4830C42-19AE-433D-AD7B-7CE07C63E0A1-140.png" width="110" height="140"></div></div><div class="medium"><div class="title">Batman v Superman: Dawn of Justice</div><span class="creator">Zack Snyder</span><span class="rating"></span><span class="asin">B01DX299BC</span><span class="description"></span><div class="cover coverimage" onclick="showDetails(this, event)"><img class="coverimage" src="../covers/9BE94752-27E4-4B56-A820-FC78644A1DE7-140.png" width="110" height="140"></div></div><div class="medium"><div class="title">Ghostbusters</div><span class="creator">Paul Feig</span><span class="rating"></span><span class="asin">B01I2FFL58</span><span class="description">Ghostbusters makes its long-awaited return with Director Paul Feig's unique and hilarious take on the classic, supernatural comedy, led by the freshest minds in comedy today, Melissa McCarthy, Kristen Wiig, Kate McKinnon, Leslie Jones, and Chris Hemsworth. Together they team-up to save Manhattan from a sudden invasion of spirits, spooks and slime that engulfs the city. Robert Abele of TheWrap says, "This new A-team of ghostbusters are fresh and funny."</span><div class="cover coverimage" onclick="showDetails(this, event)"><img class="coverimage" src="../covers/39C766C1-56B7-4183-9A8C-7EE567AD503E-140.png" width="110" height="140"></div></div><div class="medium"><div class="title">Watchmen</div><span class="creator">Various</span><span class="rating"></span><span class="asin">B01GGXDR4U</span><span class="description"></span><div class="cover coverimage" onclick="showDetails(this, event)"><img class="coverimage" src="../covers/E88F8DF2-1B51-43B5-8066-E3F19A13A797-140.png" width="110" height="140"></div></div></td>
+        </tr>
+    </table>
+    
+    <div id="details" onclick="hideDetails()">
+        <div id="detailscover"></div>
+        <div id="detailsheader">
+            <div id="detailstitle"></div>
+            <div id="detailscreator"></div>
+            <hr>
+        </div>
+
+        <div id="detailsbody">
+        </div>
+
+        <div id="detailsfooter">
+            <hr>
+            <a id="searchinsideanchor" href="#"><img id="searchinside" src="../images/searchinside.png" alt="Search Inside"></a>
+        </div>
+    </div> <!-- end details -->
+</body>
+</html>
