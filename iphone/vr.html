@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta id="viewport" name="viewport" content="width=320; initial-scale=0.9; maximum-scale=0.9; user-scalable=no;">
+
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <style type="text/css">
+        .coverimage {
+            width: auto !important;
+            height: auto !important;
+            max-width: 110px;
+            max-height: 110px;
+        }
+    </style>
+    <script type="text/javascript" src="prototype.js"></script>
+    <script type="text/javascript" src="animator.js"></script>
+    <script type="text/javascript" src="library.js"></script>
+</head>
+<body>
+    <div id="libraryheader" style="width: 100%; height: 88px; background: url(../images/shelfheader.jpg)">
+        <div id="librarybanner">Library</div>
+        
+        <div id="shelfnavigation">
+            <select class="shelf_selection" onchange="location.href = this.options[this.selectedIndex].value;"><option value="index.html">3D</option><option value="4k.html">4K</option><option value="amiibo.html">amiibo</option><option value="animated.html">Animated</option><option value="bluray.html">Blu-ray</option><option value="disneyinfinity.html">Disney Infinity</option><option value="dreamcast.html">Dreamcast</option><option value="ds.html">DS</option><option value="dvd.html">DVD</option><option value="fullcollection.html">Full Collection</option><option value="gamecube.html">GameCube</option><option value="godzilla.html">Godzilla</option><option value="holiday.html">Holiday</option><option value="legodimensions.html">Lego Dimensions</option><option value="marvelcinematicuniverse.html">Marvel Cinematic Universe</option><option value="pcgames.html">PC Games</option><option value="playstation.html">Playstation</option><option value="quentintarantino.html">Quentin Tarantino</option><option value="stephenking.html">Stephen King</option><option value="tv.html">TV</option><option value="vr.html" selected="selected">VR</option><option value="wii.html">Wii</option><option value="xbox.html">Xbox</option></select>
+        </div>
+    </div>
+    
+    <table id="mediatable" border="0" cellspacing="0" cellpadding="0" style="width: 100%; background-image: url(../images/shelfpattern.png)">
+        <tr id="collection"><td><div class="medium"><div class="title">PlayStation VR Demo Disc</div><span class="creator"></span><span class="rating"></span><span class="asin"></span><span class="description"></span><div class="cover coverimage" onclick="showDetails(this, event)"><img class="coverimage" src="../covers/2000B5B8-8F61-4546-94D3-2A3C7E48B858-140.png" width="110" height="140"></div></div><div class="medium"><div class="title">Star Wars: Battlefront Ultimate Edition</div><span class="creator">Electronic Arts</span><span class="rating"></span><span class="asin">B01MDNZOZP</span><span class="description">The Star Wars Battlefront Ultimate Edition has everything fans need to live out their Star Wars battle fantasies, including Star Wars Battlefront and Star Wars Battlefront Season Pass. Rebels and Imperials alike will be able to expand their galaxy, with 4 epic expansion packs, including Star Wars Rogue One: Scarif. In addition, players can enjoy 30+ maps, 14 heroes and 14 game modes.</span><div class="cover coverimage" onclick="showDetails(this, event)"><img class="coverimage" src="../covers/6757FA06-3E04-4407-A173-B7793A2B5CF4-140.png" width="110" height="140"></div></div><div class="medium"><div class="title">PlayStation VR Worlds</div><span class="creator">Sony Computer Entertainment</span><span class="rating"></span><span class="asin">B01I5S8V9A</span><span class="description">Step into PlayStation VR WORLDS and prepare to journey through five unique PS VR experiences specially created for the players. Go nose to nose with a great white shark, crawl through decaying space hulks, weave between oncoming traffic, survive a futuristic sport or take part in a gritty London gangster thriller. • PlayStation VR WORLDS features a breadth of content and game genres that wonderfully showcase inventive VR design, best in class visuals and binaural audio soundscapes. • PlayStation VR WORLDS demonstrates the diversity of critically renowned VR experiences; The London Heist, VR Luge and Into The Deep (working title) and featuring additional game modes, VR World challenges and more. • Compete with friends in the living room and other gamers around the globe on the VR Worlds Leaderboards. • Something for everyone, from the casual player to the gaming veteran. PlayStationVR headset and PlayStationCamera required and sold separately. Quantities are limited and not guaranteed to arrive with your software purchase.</span><div class="cover coverimage" onclick="showDetails(this, event)"><img class="coverimage" src="../covers/754E79EE-216E-42A2-9213-69981D6E81BB-140.png" width="110" height="140"></div></div><div class="medium"><div class="title">Batman: Arkham VR</div><span class="creator">Warner Home Video - Games</span><span class="rating"></span><span class="asin">B01I48X1A0</span><span class="description">Batman: Arkham VR immerses you in the Dark Knight's Universe and redefines what it means to be the Batman. Experience Gotham City through the eyes of the World's Greatest Detective in an all new Arkham mystery</span><div class="cover coverimage" onclick="showDetails(this, event)"><img class="coverimage" src="../covers/D63B800A-2DBF-4A3F-9136-DA2C7848CE63-140.png" width="110" height="140"></div></div></td>
+        </tr>
+    </table>
+    
+    <div id="details" onclick="hideDetails()">
+        <div id="detailscover"></div>
+        <div id="detailsheader">
+            <div id="detailstitle"></div>
+            <div id="detailscreator"></div>
+            <hr>
+        </div>
+
+        <div id="detailsbody">
+        </div>
+
+        <div id="detailsfooter">
+            <hr>
+            <a id="searchinsideanchor" href="#"><img id="searchinside" src="../images/searchinside.png" alt="Search Inside"></a>
+        </div>
+    </div> <!-- end details -->
+</body>
+</html>
