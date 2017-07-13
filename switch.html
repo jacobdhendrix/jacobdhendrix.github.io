@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"><html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="columns-per-page" content="1">
+        <title>Library</title>
+        
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script src="prototype.js" type="text/javascript"></script>
+        <script src="animator.js" type="text/javascript"></script>
+        <script src="library.js" type="text/javascript"></script>
+    </head>
+    <body onload="initialize()">
+        
+        <div id="details" class="details_hidden">
+            <div id="details_top">
+                <div id="drag_handle">&#8212;</div>
+                <div id="rating"></div>
+                <div id="title"></div>
+                <div id="creator"></div>
+            </div>
+            <div id="description"></div>
+        </div>
+        
+        <div id="container">
+            <div id="overlay">
+            </div>
+            <div id="header">
+                <div id="header_cap"></div>
+            </div>
+            <div id="collection_info_section">
+                <img src="images/library.png" id="librarybanner" alt="Library">
+                <div id="collection_info">
+                    <div id="user_image"><img src="covers/9EC67AC5-87CB-46A1-A83D-7B510D48E8A4.png" alt=""></div>
+                    <div id="user_name">Library</div>
+                    <div id="stats">
+        	           <div id="total">Collection Total:<br><span style="font-weight: bold">1,310 Items</span></div>
+            	       <div id="updated">Last Updated:<br><span style="font-weight: bold">Jul 13, 2017</span></div>
+        	       </div>
+                </div>
+            </div>
+            <div id="content">
+                
+                <div id="sidebar">
+                    <div class="navigation_header"></div>
+                    <div class="shelf_selection"><a class="shelf" href="index.html">3D</a><a class="shelf" href="4k.html">4K</a><a class="shelf" href="amiibo.html">amiibo</a><a class="shelf" href="animated.html">Animated</a><a class="shelf" href="bluray.html">Blu-ray</a><a class="shelf" href="disneyinfinity.html">Disney Infinity</a><a class="shelf" href="dreamcast.html">Dreamcast</a><a class="shelf" href="ds.html">DS</a><a class="shelf" href="dvd.html">DVD</a><a class="shelf" href="fullcollection.html">Full Collection</a><a class="shelf" href="gamecube.html">GameCube</a><a class="shelf" href="godzilla.html">Godzilla</a><a class="shelf" href="holiday.html">Holiday</a><a class="shelf" href="legodimensions.html">Lego Dimensions</a><a class="shelf" href="marvelcinematicuniverse.html">Marvel Cinematic Universe</a><a class="shelf" href="pcgames.html">PC Games</a><a class="shelf" href="playstation.html">Playstation</a><a class="shelf" href="quentintarantino.html">Quentin Tarantino</a><a class="shelf" href="stephenking.html">Stephen King</a><a class="shelf selected" href="switch.html">Switch</a><a class="shelf" href="tv.html">TV</a><a class="shelf" href="vr.html">VR</a><a class="shelf" href="wii.html">Wii</a><a class="shelf" href="xbox.html">Xbox</a></div>
+                    <div class="navigation_footer"></div>
+                    <script type="text/javascript">fillInMediaIcons();</script> <!-- Do this immediately so we don't wait for like 7,000 media to load first -->
+                </div>  <!-- End sidebar -->
+
+                <div id="collection">
+                    <div id="media" onclick="deselect();">
+                        <table>
+                            <tbody>
+                                <tr><td><div class="medium"><div class="title">Mario Kart 8 Deluxe</div><div class="cover" onclick="showDetails(this, event)"><img class="coverimage" src="covers/234CC53A-607B-4D7C-B32F-BAFABAC05022-140.png" width="104" height="140"></div><span class="creator"></span><span class="rating"></span><span class="description">Nintendo Switch Software Mario Kart 8 Deluxe. Hit the road with the definitive version of Mario Kart 8 and play anytime, anywhere! Race your friends or battle them in a revised battle mode on new and returning battle courses. Play locally in up to 4-player multiplayer in 1080p while playing in TV Mode. Every track from the Wii U version, including DLC, makes a glorious return. Plus, the Inklings appear as all-new guest characters, along with returning favorites, such as King Boo, Dry Bones, and Bowser Jr.!</span></div><div class="medium"><div class="title">Super Bomberman R</div><div class="cover" onclick="showDetails(this, event)"><img class="coverimage" src="covers/84019E6B-D750-4F3D-8CBC-C6CEE032E12C-140.png" width="104" height="140"></div><span class="creator">Konami</span><span class="rating"></span><span class="description">Super Bomberman R makes full use of the Nintendo Switch system capabilities, which enables gamers to play wherever, whenever and with whomever they choose. Super Bomberman R offers a 'Battle' mode where up to eight players are dropped within a maze until the 'last man standing' is declared the winner. There is also a 'Story' mode where one to two players work cooperatively to clear a series of 50 stages in order to save the galaxy.</span></div><div class="medium"><div class="title">The Legend of Zelda: Breath of the Wild</div><div class="cover" onclick="showDetails(this, event)"><img class="coverimage" src="covers/5664013E-0F80-440C-9165-F7ED91ADA4EF-140.png" width="104" height="140"></div><span class="creator">Nintendo</span><span class="rating"></span><span class="description">Step into a world of discovery, exploration, and adventure in The Legend of Zelda: Breath of the Wild, a boundary-breaking new game in the acclaimed series. Travel across vast fields, through forests, and to mountain peaks as you discover what has become of the kingdom of Hyrule in this stunning Open-Air Adventure. Now on the Nintendo Switch console, your journey is freer and more open than ever. Take your system anywhere, and adventure as Link any way you like.Discover a world as never before seen: by making your own path, choices, and consequencesIngenuity is the key to survival: find multiple solutions to tons of dynamic puzzlesSurprises hide around every corner: scavenge weapons, armor, plants, animals, and moreLive off the land: find weapons and armor, cook food, and brew elixirsUtilize special technology: the in-game Sheikah Slate controls objects and enemies in fun waysGear up: many weapons and armor have unique stats, resistances, effects, and durabilityShrines offer hundreds of clever challenges even veterans won’t see comingCompatible amiibo include the Wolf Link amiibo figure, figures from the Legend of Zelda 30th Anniversary amiibo series, and figures from The Legend of Zelda: Breath of the Wild amiibo series. Each one will offer Link in-game items that may just come in handy.</span></div><div class="medium"><div class="title">Lego City Undercover</div><div class="cover" onclick="showDetails(this, event)"><img class="coverimage" src="covers/5AB0DAF8-3DE0-4EDE-A209-5CCC9F5BFCCF-140.png" width="104" height="140"></div><span class="creator">Warner Home Video - Games</span><span class="rating"></span><span class="description">Join the Chase! In LEGO CITY Undercover, play as Chase McCain, a police officer who's been tasked with going undercover to hunt down the notorious - and recently escaped - criminal Rex Fury and putting an end to his city-wide crime wave. With two player co-op, friends can explore the sprawling open-world metropolis that is LEGO City, with more than 20 unique districts to investigate, car thieves to bust, hilarious movie references to discover, vehicles to drive, and hundreds of collectibles. LEGO CITY Undercover brings together witty, original storytelling with signature LEGO humor to create a fun-filled experience for players of all ages to enjoy.</span></div></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div> <!-- End media -->
+                </div> <!-- End collection -->
+                
+                <div style="clear: both;"></div>
+            </div> <!-- End content -->
+            
+            <div id="footer">
+                <a href="http://www.delicious-monster.com">
+                    <img src="images/monster.png" alt=""> Made with Delicious Library
+                </a>
+            <p>Springfield, State zipflap congrotus delicious library Hendrix, Jacob</p>
+            </div> <!-- End footer -->
+            
+        </div> <!-- End container -->
+    </body>
+</html>
